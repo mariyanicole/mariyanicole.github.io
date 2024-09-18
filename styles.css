@@ -35,10 +35,6 @@ nav ul li a {
     font-family: sans-serif;
     background-color: rgb(255, 255, 255);
 }
-
-.HOME-content {
-    margin-left: 50px;
-}
 .HOME-content h1 {
     font-family:'Times New Roman';
     color: crimson;
@@ -85,11 +81,34 @@ nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
     color: crimson;
     font-weight: bold;
-    margin-bottom: 300px;
+    margin-bottom: -550px;
+}
+
+.des {
+    color: crimson;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    margin-right: 70px;
+    margin-left:50px;
+}
+.one {
+    background-color: beige;
 }
 .one-content h1 {
     font-weight: 100;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 600px;
     margin-left: 13%;
+}
+
+.two {
+    background-color: beige;
+}
+
+.four {
+    background-color: beige;
+}
+
+.concat {
+    background-color: beige;
 }
