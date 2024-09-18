@@ -13,15 +13,16 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#"class="active">HOME</a></li>
+                <li><a href="#hm"class="active">HOME</a></li>
                 <li><a href="#Aboutme"class="one">ABOUT ME</a></li>
-                <li><a href="#"class="two">PROJECTS</a></li>
-                <li><a href="#"class="three">FAVORATES</a></li>
-                <li><a href="#"class="four">CONTACTS</a></li>
+                <li><a href="#pj"class="two">PROJECTS</a></li>
+                <li><a href="#fr"class="three">FAVORATES</a></li>
+                <li><a href="#ct"class="four">CONTACTS</a></li>
             </ul>
         </nav>
     </div>
-    <section class="HOME-content">
+    
+    <section class="HOME" id="hm">
         <div class="HOME-image">
         </div>
         <div class="HOME-content">
@@ -48,31 +49,57 @@
                 Choosing Computer Science was the most unexpected decision I ever made because it wasn't part of my plan. 
                 It sparked my curiosity, and I decided to take the risk. I don’t think it’s a good idea to always follow 
                 our curiosity and let our impulsive thoughts win,
-         </div>
-         <div class="edu">
-            <h1>EDUCATION<span></span></h1>
-            <p class="des">
+         
+                <h1>EDUCATION<span></span></h1>
+                <p class="des">
                 Elementary School: Starchild Innovative Learning Academy <br>
                 Junior High School: Starchild Innovative Learning Academy <br>
                 Senior Hign School: St. Mary's College of Baganga <br>
                 College University: University of Immaculate Conception <br>
-            </p>
+                </p>
+            </div>
          </div>
     </section>
-    <section class="two" id="project">
+    
+    <section class="two" id="pj">
         <div class="proj">
             <h1>PROJECTS<span></span></h1>
+            <li><a href="fashion.blog.html" target="_blank">Fashion Blog</a></li>
+            <li><a href="healthyrecipes.html" target="_blank">Healthy Recipes</a></li>
         </div>
     </section>
-    <section class="three" id="skills">
+    
+    <section class="three" id="fr">
         <div class="fav">
             <h1>FAVORATES<span></span></h1>
         </div>
     </section>
-    <section class="four" id="contact">
+    
+    <section class="four" id="ct">
         <div class="cont"> 
             <h1>CONTACTS<span></span></h1>
+            <p>Facebook: Nicole Morales </p>
+            <p>Email: mmorales_230000000863@uic.edu.ph</p>
         </div>
+    </section>
+    
+    <section>
+        <fieldset class="concat">
+        <legend class="contactme">Contact Me</legend>
+        <label for="fname">Full name:</label>
+        <input type="text" 
+               id="fname" 
+               name="fname"><br><br>
+        <label for="lname">Email:</label>
+        <input type="text" 
+               id="lname" 
+               name="lname"><br><br>
+        <label for="email">Message</label>
+        <input type="email" 
+               id="email" 
+               name="email"><br><br>
+        <button type="button" value="Contact Me">Contact Me</button>
+        </fieldset>
     </section>
 </body>
 </html>
