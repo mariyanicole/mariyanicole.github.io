@@ -5,102 +5,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <li><a href="MediaQuery.html" target="_blank">Media Query Demo<a></li></nav> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
 </head>
-<body>
-    <div class="list">
-        <div class="image">
-            <img src="picture/logo.png" class="logo"></li>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#hm"class="active">HOME</a></li>
-                <li><a href="#Aboutme"class="one">ABOUT ME</a></li>
-                <li><a href="#pj"class="two">PROJECTS</a></li>
-                <li><a href="#fr"class="three">FAVORATES</a></li>
-                <li><a href="#ct"class="four">CONTACTS</a></li>
-            </ul>
+<body> 
+    <header class="header">
+        <button id="theme-switch">
+
+        </button>
+        
+        <a href="#" class="logo"><span>Mar</span>iya</a>
+
+        <nav class="navbar"> 
+            <a href="#Home"class="active">HOME</a>
+            <a href="#about_me">ABOUT ME</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#project">PROJECTS</a>
         </nav>
-    </div>
-    
-    <section class="HOME" id="hm">
-        <div class="HOME-image">
-        </div>
-        <div class="HOME-content">
-            <h1>HELLO!<span></span></h1>
-            <h2>WELCOME TO MY PORTFOLIO<span></span></h2>
-            <h3>It's me Maria<span></span></h3>
-        </div>
-        <div class="images">
-            <img src="picture/shape.png" class="shape">
-            <img src="picture/selfie.png"class="selfie">
-        </div>
-    </section>
-    <section class="one" id="Aboutme">
-         <div class="one-content">
-            <h1>ABOUT ME<span></span></h1>
-             <p class="para"> Hello! My name is Ma. Nicole B. Morales. I was born on October 30, 2005, in Davao City but raised
-                 in Baganga, Davao Oriental. Currently, I live in Davao City to pursue my studies and experience living 
-                 independently. I’m a Computer Science student at the University of the Immaculate Conception. My favorite 
-                 color is a shade close to brown, much like the color of coffee, as I’m a coffee enthusiast. I also love 
-                 traveling and dream of visiting Paris someday. Ice cream is my comfort food because it gives me a sense of calm and peace.
-                I’m passionate about exploring new places and constantly learning, both in life and in my academic journey.
-                I really love being alone most of the time as it gives me peace and makes me calm. When I am alone, 
-                I can think peacefully. However, sometimes I love being with my friends, as they also give me happiness and are my source of energy.
-                Choosing Computer Science was the most unexpected decision I ever made because it wasn't part of my plan. 
-                It sparked my curiosity, and I decided to take the risk. I don’t think it’s a good idea to always follow 
-                our curiosity and let our impulsive thoughts win,
-         
-                <h1>EDUCATION<span></span></h1>
-                <p class="des">
-                Elementary School: Starchild Innovative Learning Academy <br>
-                Junior High School: Starchild Innovative Learning Academy <br>
-                Senior Hign School: St. Mary's College of Baganga <br>
-                College University: University of Immaculate Conception <br>
-                </p>
+
+        <a href="#contacts" class="contact">Contact Me</a>
+    </header>
+
+    <section class="home" id="Home">
+        <div class="home-content">
+            <h3>HELLO!</h3>
+            <h1>I am Maria</h1>
+            <h2>Welcome to my portfolio</h2>
+            <p> I am excited to share my journey in Web Development with you.
+            For more information feel free to message me.</p>
+
+            <div class="btn-box">
+                <button class="btn"><a href="#message-me">Message Me</a></button>
             </div>
-         </div>
-    </section>
-    
-    <section class="two" id="pj">
-        <div class="proj">
-            <h1>PROJECTS<span></span></h1>
-            <li><a href="https://mariyanicole.github.io/fashion.blog.html" target="_blank">Fashion Blog</a></li>
-            <li><a href="//mariyanicole.github.io/healthyrecipes.html" target="_blank">Healthy Recipes</a></li>
+        </div>
+        <div class="img-box">
+            <img src="picture/image.jpg" alt="">
         </div>
     </section>
-    
-    <section class="three" id="fr">
-        <div class="fav">
-            <h1>FAVORATES<span></span></h1>
+
+    <section class="about" id="about_me">
+
+        <div class="about-img">
+            <img src="picture/image1.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>ME</span></h2>
+            <p>Hello! My name is Ma. Nicole B. Morales. 
+                 I was born on october 30,
+                 2005, in Davao City but raised in Baganga, Davao Oriental. 
+                Currently, I live in Davao City to pursue my studies and experienced living independently. 
+                I'm a Computer Science student at the University of Immaculate Conception.</p>
+
+                <div class="btn-box">
+                    <button class="btn-more">More</button>
+                </div>
         </div>
     </section>
+
+    <section class="EDUCATION" id="education">
+
+        <div class="container">
+
+            <main class="row">
     
-    <section class="four" id="ct">
-        <div class="cont"> 
-            <h1>CONTACTS<span></span></h1>
-            <p>Facebook: Nicole Morales </p>
-            <p>Email: mmorales_230000000863@uic.edu.ph</p>
+                <section class="col">
+    
+                    <header class="title">
+                        <h2>
+                            <i class='bx bxs-graduation'></i>
+                            EDUCATION
+                        </h2>
+                    </header>
+    
+                    <div class="contents">
+
+                        <div class="box">
+                            <h4>
+                                <i class='bx bxs-calendar'></i>
+                                2011 - 2016
+                            </h4>
+                            <h3>Elementary School</h3>
+                            <P>Starchild Innocative Learning Academy</P>
+                        </div>
+        
+                        <div class="box">
+                            <h4>
+                                <i class='bx bxs-calendar'></i>
+                                2017 - 2010
+                            </h4>
+                            <h3>Juinior High School</h3>
+                            <P>Starchild Innocative Learning Academy</P>
+                        </div>
+        
+                        <div class="box">
+                            <h4>
+                                <i class='bx bxs-calendar'></i>
+                                2021 - 2023
+                            </h4>
+                            <h3>Senior High School</h3>
+                            <P>St, Mary's College of Baganga</P>
+                        </div>
+        
+                        <div class="box">
+                            <h4>
+                                <i class='bx bxs-calendar'></i>
+                                2022 - ongoing
+                            </h4>
+                            <h3>University College</h3>
+                            <P>University of Immaculate Conception</P>
+                        </div>
+                    </div>
+    
+                </section>
+            </main>
         </div>
     </section>
+
+    <section class="PROJECTS" id="project">
+
+        <div class="container-1">
+
+            <main class="row-1">
     
-    <section>
-        <fieldset class="concat">
-        <legend class="contactme">Contact Me</legend>
-        <label for="fname">Full name:</label>
-        <input type="text" 
-               id="fname" 
-               name="fname"><br><br>
-        <label for="lname">Email:</label>
-        <input type="text" 
-               id="lname" 
-               name="lname"><br><br>
-        <label for="email">Message</label>
-        <input type="email" 
-               id="email" 
-               name="email"><br><br>
-        <button type="button" value="Contact Me">Contact Me</button>
-        </fieldset>
+                <section class="col-1">
+    
+                    <header class="title-1">
+                        <h2>
+                            <i class='bx bx-cube-alt'></i>
+                            PROJECTS
+                        </h2>
+                    </header>
+    
+                    <div class="contents-1">
+
+                        <div class="box-1">
+                            <h4>
+                                <i class='bx bx-cube-alt'></i>
+                                CC008.23
+                            </h4>
+                            <h3>Fashion Blog</h3>
+                            <div class="btn-box">
+                                <button class="btn"><a href="fashion.blog.html">Click This!</a></button>
+                            </div>
+                        </div>
+        
+                        <div class="box-1">
+                            <h4>
+                                <i class='bx bx-cube-alt'></i>
+                                CC008.23
+                            </h4>
+                            <h3>Healthy Recipes</h3>
+                            <div class="btn-box">
+                                <button class="btn"><a href="healthyrecipes.html">Click This!</a></button>
+                            </div>
+                        </div>
+        
+                        <div class="box-1">
+                            <h4>
+                                <i class='bx bx-cube-alt'></i>
+                                CC008.23
+                            </h4>
+                            <h3>Media Query</h3>
+                            <div class="btn-box">
+                                <button class="btn"><a href="MediaQuery.html">Click This!</a></button>
+                            </div>
+                        </div>
+        
+                        <div class="box-1">
+                            <h4>
+                                <i class='bx bx-cube-alt'></i>
+                                CC008.23
+                            </h4>
+                            <h3>Code Academy Completion</h3>
+                            <div class="btn-box">
+                                <button class="btn"><a href="codeacad.html">Click This!</a></button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </section>
+            </main>
+        </div>
     </section>
+
+    <section class="contact-form" id="message-me">
+        <h2 class="contact-me">Message <span>Me</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    
+    <footer class="footer" id="contacts">
+
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#"><i class='bx bxl-gmail' ></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+        </div>
+        <ul>
+            <li>
+                <h3>
+                    <i class='bx bxs-phone'></i>
+                    09207330517
+                </h3>
+            </li>
+            
+            <li>
+                <h3>
+                    <i class='bx bxs-school' ></i>
+                    University of Immaculate Conception
+                </h3>
+            </li>
+            
+            <li>
+                <h3>
+                    <i class='bx bx-home-alt'></i>
+                    Davao City, Philippines
+                </h3>
+            </li>
+        </ul>
+    </footer>
+   
 </body>
 </html>
