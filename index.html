@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
 
 </head>
-<body> 
+<body>  
     <header class="header">
-        <button id="theme-switch">
+        <button class="dark-mode-toggle-btn" id="darkModeToggle" ><i class='bx bx-moon'>Darkmode</i></button>
 
-        </button>
-        
+        <script>
+            const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+    }
+
+    // Toggle Dark Mode
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        // Save preference in localStorage
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+        </script>
         <a href="#" class="logo"><span>Mar</span>iya</a>
+        
 
         <nav class="navbar"> 
             <a href="#Home"class="active">HOME</a>
@@ -58,10 +78,6 @@
                  2005, in Davao City but raised in Baganga, Davao Oriental. 
                 Currently, I live in Davao City to pursue my studies and experienced living independently. 
                 I'm a Computer Science student at the University of Immaculate Conception.</p>
-
-                <div class="btn-box">
-                    <button class="btn-more">More</button>
-                </div>
         </div>
     </section>
 
@@ -94,7 +110,7 @@
                         <div class="box">
                             <h4>
                                 <i class='bx bxs-calendar'></i>
-                                2017 - 2020
+                                2017 - 2010
                             </h4>
                             <h3>Juinior High School</h3>
                             <P>Starchild Innocative Learning Academy</P>
@@ -210,18 +226,30 @@
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
+
+    <div class="api-container">
+        <h1>Lastname API Demo on Movies</h1>
+        <button onclick="callAPI()">Fetch Movie</button>
+        <div>
+        <h2>Movie Details</h2>
+        <p><strong>ID:</strong> <span id="movie_id">--</span></p>
+        <p><strong>Title:</strong> <span id="movie_title">--</span></p>
+        <p><strong>Year:</strong> <span id="movie_year">--</span></p>
+        <p><strong>Poster:</strong> <div id="movie_poster">--</div></p>
+        </div>
+    </div>
+    
     
     <footer class="footer" id="contacts">
 
         <div class="social">
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-gmail' ></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/morales.nicole.345?mibextid=LQQJ4d"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/maryanicee/profilecard/?igsh=YjRsdGZpYnB2dGho"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://mariyanicole.github.io"><i class='bx bxl-github'></i></a>
         </div>
         <ul>
             <li>
-                <h3>
+                <h3>    
                     <i class='bx bxs-phone'></i>
                     09207330517
                 </h3>
@@ -242,6 +270,8 @@
             </li>
         </ul>
     </footer>
-   
+
+    
+    
 </body>
 </html>
